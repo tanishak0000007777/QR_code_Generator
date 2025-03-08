@@ -1,0 +1,123 @@
+:root{
+    --bcg-color: #001122;
+    --primary-color: #155e75;
+    --border-radius: 8px;
+    --secondary-color: #fff;
+    --border-color: #7fb7c9;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(#2D3436,
+    black) 0 100% no-repeat;
+    background-size: 100% 50%;
+    color: black;
+    
+}
+
+.box{
+    width: 480px;
+    padding: 50px;
+    border: 1px solid black;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left:50%;
+    background-color:white;
+    box-shadow: 0 5px 35px rgba(50,50,50,.2);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins",sans-serif;
+    
+}
+
+.qr-header h1{
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    /* color: var(--secondary-color); */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.qr-header input{
+    width: 100%;
+    margin-block: 14px;
+    border: 0px solid black
+}
+
+.qr-header input, select{
+    padding: 8px;
+    border-radius: var(--border-radius);
+    font-size: 18px;
+    outline: none;
+    border: 2px solid black;
+}
+
+.qr-header label{
+    /* color: var(--secondary-color); */
+    font-size: 20px;
+    font-size: 25x;
+    font-weight: 400;
+    /* text-align: center; */
+}
+
+.qr-header div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.qr-footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 4px;
+}
+.qr-footer a{
+    
+    border: 2px solid black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 14px 36px;
+    margin-inline: 2px;
+    color: black;
+    font-weight: 600;
+    border-radius: var(--border-radius);
+}
+
+.qr-body{
+    display: grid;
+    place-items: center;
+    padding:20px;
+}
+
+.qr-body img{
+    max-width: 100%;
+    max-height: 100%;
+    margin-block: 10px;
+    padding: 20px;
+    border: 0.5px solid black;
+    border-radius: var(--border-radius);
+}
+
+@media screen and (max-width:520px){
+    .box{
+        width: 80%;
+    }
+    .qr-footer a{
+        padding: 12px;
+        font-size: 16px;
+    }
+}
